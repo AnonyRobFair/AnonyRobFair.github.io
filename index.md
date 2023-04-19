@@ -25,7 +25,7 @@ In summary, this paper makes the following contributions:
 
 | Dataset        | ML-1M | BC | AZ-SO | CIAO |
 | -------------- | ------ | ------ | ------------- | -------- |
-| # Users |     | 6,038  | 6,810 | 	22,685	| 7,373   |
+| # Users | 6,038  | 6,810 | 	22,685	| 7,373   |
 | # Items   | 3,952  | 9,135  | 12,300     | 106,796   |
 | # Interactions  | 518,482 | 114,426  | 185,718     | 204,425  |
 | Sparsity         | 97.83% | 99.82%    | 99.93%     | 99.97%  |
@@ -38,7 +38,7 @@ In summary, this paper makes the following contributions:
 
 ### Step 1: Download the project
 
-Our project `DistFair.zip` is available at [Google Drive](). Download and unzip our project. It contains both codes and datasets.
+Our project `RobFair.zip` is available at [Google Drive](). Download and unzip our project. It contains both codes and datasets.
 ### Step 2: Create the running environment
 
 Create `Python 3.9` enviroment and install the packages that the project requires.
