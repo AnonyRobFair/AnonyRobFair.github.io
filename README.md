@@ -5,14 +5,17 @@ layout: default
 ## Towards Distributionally Robust Fairness-aware Recommendation
 
 ## 1 Abstract
-
-Due to the progressive advancement of trustworthy algorithms in machine learning, fairness in recommendation systems attracts increasing attentions and is often considered from the user perspective. 
-However, conventional fairness-aware models suffer from the distribution shift problem in realistic scenarios, where the testing sample distribution is skewed from the training distribution. 
-If the user preferences have shifted between the training and testing sets, fairness-aware models may be unaware of such distribution shifts in each user group, leading to a sharp decline in performance during testing. 
-To address this issue, we propose a robust fairness-aware recommendation framework in this paper. 
-Specifically, we use dual distributionally robust optimization technique to improve the worst-case model performance, where we approximate the test distributions through automatically reweighting the training samples for each user group in the training set. 
-Additionally, to alleviate learning difficulties, we use a clustering technique to reduce the number of learnable sample weights. Furthermore, we soften the above clustering strategy to optimize our framework in a fully differentiable manner. 
-Finally, we conduct extensive experiments based on four real-world datasets to verify the effectiveness of our proposed framework.
+Due to the progressive advancement of trustworthy machine learning algorithms, fairness in recommender systems is attracting increasing attention and is often considered from the perspective of users. 
+Conventional fairness-aware recommendation models make the assumption that user preferences remain the same between the training set and the testing set.
+However, this assumption is disagreed with reality, where user preference can shift in the testing set due to the natural spatial or temporal heterogeneity.
+It is concerning that conventional fairness-aware models may be unaware of such distribution shifts, leading to a sharp decline in the model performance.
+To address the distribution shift problem, we propose a robust fairness-aware recommendation framework based on Distributionally Robust Optimization (DRO) technique.
+In specific, we assign learnable weights for each sample to approximate the distributions that leads to the worst-case model performance, and then optimize the fairness-aware recommendation model to improve the worst-case performance in terms of both fairness and recommendation accuracy.
+By iteratively updating the weights and the model parameter, our framework can be robust to unseen testing sets.
+To ease the learning difficulty of DRO, we use a hard clustering technique to reduce the number of learnable sample weights.
+To optimize our framework in a full differentiable manner, we soften the above clustering strategy.
+Empirically, we conduct extensive experiments based on four real-world datasets to verify the effectiveness of our proposed framework.
+For benefiting the research community, we have released our project at https://anonyrobfair.github.io/.
 
 ## 2 Contributions
 
