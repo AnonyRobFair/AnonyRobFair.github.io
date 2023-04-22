@@ -38,7 +38,7 @@ In summary, this paper makes the following contributions:
 
 ### Step 1: Download the project
 
-Our project `RobFair.zip` is available at [Google Drive](). Download and unzip our project. It contains both codes and datasets.
+Our project `RobFair.zip` is available at [Google Drive](https://drive.google.com/file/d/1fIG9p1dVy5yqCOPdJKltwif7EyXQQGw3/view?usp=sharing). Download and unzip our project. It contains both codes and datasets.
 ### Step 2: Create the running environment
 
 Create `Python 3.9` enviroment and install the packages that the project requires.
